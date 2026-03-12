@@ -72,10 +72,10 @@ if uploaded_file:
     col1, col2 = st.columns(2)
 
     with col1:
-        st.image(image, caption="Original Image", use_container_width=True)
+       st.image(image, caption="Original Image", width=400)
 
     with col2:
-        st.image(result_img, caption="Detected Image", use_container_width=True)
+        st.image(result_img, caption="Detected Image", width=400)
 
     boxes = results[0].boxes
 
