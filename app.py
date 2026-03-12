@@ -19,7 +19,8 @@ st.markdown("<p style='text-align:center;'>Upload a meal image to detect food it
 # ---------------- LOAD MODEL ----------------
 @st.cache_resource
 def load_model():
-    return YOLO("best.pt")
+    model = YOLO("best.pt")
+    return model
 
 model = load_model()
 
