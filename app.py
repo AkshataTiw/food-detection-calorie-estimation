@@ -1,4 +1,8 @@
 import streamlit as st
+
+import torch
+torch.set_num_threads(1)
+
 from ultralytics import YOLO
 from PIL import Image
 import pandas as pd
